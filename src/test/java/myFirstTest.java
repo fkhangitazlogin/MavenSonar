@@ -42,7 +42,7 @@ public class myFirstTest {
     {
         int a=10;
         int b=10;
-        int lookingfor = 100;
+        double lookingfor = 1.0;
         double result = objcalc.div(a,b);
         Assert.assertEquals(lookingfor,result,0.00005);
     }

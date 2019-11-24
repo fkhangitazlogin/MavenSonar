@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67d360c1-bccc-41da-9d0b-f70377f0fd84" name="Default Changelist" comment="" />
+    <list default="true" id="67d360c1-bccc-41da-9d0b-f70377f0fd84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/myFirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/myFirstTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -26,6 +31,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1U1HknfNHbyznOZeSBtfW6JpKAx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -42,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.myFirstTest.AddFail">
+  <component name="RunManager" selected="JUnit.myFirstTest.DivFail">
     <configuration name="myFirstPo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="myFirstPo" />
       <module name="mavenSonar" />
@@ -80,8 +86,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="myFirstTest.DivFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mavenSonar" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="myFirstTest" />
+      <option name="METHOD_NAME" value="DivFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.myFirstTest.DivFail" />
         <item itemvalue="JUnit.myFirstTest.AddFail" />
         <item itemvalue="JUnit.myFirstTest.AddPass" />
         <item itemvalue="Application.myFirstPo" />
@@ -100,11 +117,22 @@
       <option name="presentableId" value="Default" />
       <updated>1574517326542</updated>
       <workItem from="1574517330000" duration="2002000" />
-      <workItem from="1574580892880" duration="10852000" />
+      <workItem from="1574580892880" duration="11510000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
