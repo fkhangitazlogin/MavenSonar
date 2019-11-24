@@ -14,12 +14,9 @@ pipeline
 		{
 			steps
 			{
-				withSonarQubeEnv(credentialsId: 'sonar')
+				withSonarQubeEnv(credentialsId: 'sonar', installationName: 'sonarqube')
 				{
-					withMaven(maven:'Maven 3.5')
-					{
-                        bat 'mvn test sonar:sonar'
-					}
+                        bat "mvn test sonar:sonar"
 				}
 			}
 		}
