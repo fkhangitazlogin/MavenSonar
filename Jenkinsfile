@@ -32,7 +32,7 @@ pipeline
                 echo 'Sonar Scanner'
 			    withSonarQubeEnv('sonarqube') 
 				{
-			    	echo 'sonar code scan completed'
+			    	bat 'mvn sonar:sonar'
 			    }
             }
         }
