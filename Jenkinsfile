@@ -36,12 +36,12 @@ pipeline
 			    }
             }
         }
-        stage('build coverage check')
+        /*stage('build coverage check')
         {
             steps
             {
                 bat 'mvn clean verify'
             }
-        }
+        }*/
 	}
 }
