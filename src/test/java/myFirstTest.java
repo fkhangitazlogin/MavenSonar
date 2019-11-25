@@ -19,7 +19,7 @@ public class myFirstTest {
         long result = objcalc.add(a,b);
         Assert.assertEquals(lookingfor,result);
     }
-    @Test
+    /*@Test
     public void SubPass()
     {
         int a=10;
@@ -45,7 +45,7 @@ public class myFirstTest {
         double lookingfor = 1.0;
         double result = objcalc.div(a,b);
         Assert.assertEquals(lookingfor,result,0.00005);
-    }
+    }*/
     @Test(expected = IllegalArgumentException.class)
     public void testDivideByZero() {
         int a = 15;
