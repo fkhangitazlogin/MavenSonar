@@ -14,17 +14,17 @@ pipeline
 		{
 			steps
 			{
-				bat "mvn test"
+				bat "mvn clean test"
 			}
 		}
-		stage('JaCoCo')
+		/*stage('JaCoCo')
 		{
             steps 
 			{
                 echo 'Code Coverage'
                 jacoco()
             }
-        }
+        }*/
         stage('Sonar') 
 		{
             steps 
