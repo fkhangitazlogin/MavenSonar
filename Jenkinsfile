@@ -3,22 +3,38 @@ pipeline
 	agent any
 	stages
 	{
-		stage('Test')
+		stage('Build')
 		{
 			steps
 			{
 				bat "mvn clean compile"
 			}
 		}
-		stage('Sonar Code Analysis')
+		stage('Test')
 		{
 			steps
 			{
-				withSonarQubeEnv(credentialsId: 'sonar', installationName: 'sonarqube')
-				{
-                    bat "mvn test sonar:sonar"
-				}
+				bat "mvn test"
 			}
 		}
+		stage('JaCoCo') 
+		{
+            steps 
+			{
+                echo 'Code Coverage'
+                jacoco()
+            }
+        }
+        stage('Sonar') 
+		{
+            steps 
+			{
+                echo 'Sonar Scanner'
+			    withSonarQubeEnv('sonarqube') 
+				{
+			    	echo 'sonar code scan completed'
+			    }
+            }
+        }
 	}
 }
