@@ -54,29 +54,28 @@
                         </goals>
                         <configuration>
                             <propertyName>surefireArgLine</propertyName>
-                            <destFile>${project.build.directory}/target/jacoco.exec</destFile>
                         </configuration>
                     </execution>
                     <execution>
-                        <id>check</id>
+                        <id>jacoco-check</id>
                         <goals>
                             <goal>check</goal>
                         </goals>
                         <configuration>
+                            <dataFile>${project.build.directory}/target/jacoco.exec</dataFile>
                             <rules>
-                                <!-- All classes must have 80% line and branch coverage . Note we use 2 d.p so that we get can any check failure messages reported to 2 d.p  -->
-                                <rule >
-                                    <element>CLASS</element>
+                                <rule implementation="org.jacoco.maven.RuleConfiguration">
+                                    <element>BUNDLE</element>
                                     <limits>
-                                        <limit >
-                                            <counter>LINE</counter>
+                                        <limit implementation="org.jacoco.report.check.Limit">
+                                            <counter>INSTRUCTION</counter>
                                             <value>COVEREDRATIO</value>
                                             <minimum>0.80</minimum>
                                         </limit>
-                                        <limit >
-                                            <counter>BRANCH</counter>
-                                            <value>COVEREDRATIO</value>
-                                            <minimum>0.80</minimum>
+                                        <limit implementation="org.jacoco.report.check.Limit">
+                                            <counter>CLASS</counter>
+                                            <value>MISSEDCOUNT</value>
+                                            <maximum>0</maximum>
                                         </limit>
                                     </limits>
                                 </rule>
