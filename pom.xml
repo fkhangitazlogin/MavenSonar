@@ -35,6 +35,11 @@
                 <version>0.8.4</version>
                 <executions>
                     <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
                         <id>jacoco-check</id>
                         <goals>
                             <goal>check</goal>
@@ -54,11 +59,6 @@
                                 </rule>
                             </rules>
                         </configuration>
-                    </execution>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
                     </execution>
                     <!-- attached to Maven test phase -->
                     <execution>
