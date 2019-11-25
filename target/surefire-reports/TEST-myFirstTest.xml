@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="myFirstTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="myFirstTest" time="0.011" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.5+10-LTS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.5\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\111105\Desktop\devops Learnings\mavenSonar"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value=""/>
@@ -19,6 +17,7 @@
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.5+10-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\Users\111105\Desktop\devops Learnings\mavenSonar"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\111105\AppData\Local\Temp\"/>
     <property name="line.separator" value="
@@ -26,26 +25,23 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Tools\MAVEN\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\app\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk-11.0.5;C:\Program Files\Java\jdk-11.0.5\bin;C:\Tools\MongoDB\Server\4.0\bin;C:\Tools\MongoDB\Server\4.0\bin\bin;C:\Tools\Apache;C:\Tools\Apache\bin;C:\Tools\Gradle\gradle-5.4.1;C:\Tools\Gradle\gradle-5.4.1\bin;C:\Tools\ANT\apache-ant-1.10.6;C:\Tools\ANT\apache-ant-1.10.6\bin;C:\Tools\MAVEN\apache-maven-3.6.1;C:\Tools\MAVEN\apache-maven-3.6.1\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\usr\bin;C:\Program Files\Git\bin;C:\Program Files\Git\mingw64\bin;C:\Users\111105\.ebcli-virtual-env\executables;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\Amazon\AWSCLI\bincompat;C:\Program Files\Amazon\AWSCLI\runtime\Scripts;C:\Program Files\Amazon\AWSCLI\runtime\Scripts\aws.cmd;C:\Users\111105\.ebcli-virtual-env\Scripts;C:\Tools\sonarcube\sonarqube-8.0\bin;C:\Users\111105\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\111105\AppData\Local\Programs\Python\Python38-32\;C:\Users\111105\AppData\Local\Microsoft\WindowsApps;C:\Users\111105\.dotnet\tools;C:\Users\111105\.ebcli-virtual-env\executables;."/>
-    <property name="maven.conf" value="C:\Tools\MAVEN\apache-maven-3.6.1\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\Tools\MAVEN\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\111105"/>
-    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="user.timezone" value=""/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="11"/>
     <property name="user.name" value="111105"/>
-    <property name="java.class.path" value="C:\Tools\MAVEN\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.class.path" value="C:\Users\111105\.m2\repository\org\apache\maven\surefire\surefire-booter\2.3\surefire-booter-2.3.jar;C:\Users\111105\.m2\repository\org\apache\maven\surefire\surefire-api\2.3\surefire-api-2.3.jar;C:\Users\111105\.m2\repository\org\codehaus\plexus\plexus-utils\1.1\plexus-utils-1.1.jar;C:\Users\111105\.m2\repository\commons-lang\commons-lang\2.1\commons-lang-2.1.jar;C:\Users\111105\.m2\repository\org\codehaus\plexus\plexus-archiver\1.0-alpha-7\plexus-archiver-1.0-alpha-7.jar;C:\Users\111105\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-8\plexus-container-default-1.0-alpha-8.jar;C:\Users\111105\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\111105\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.SurefireBooter C:\Users\111105\AppData\Local\Temp\surefire8599912403385837818tmp C:\Users\111105\AppData\Local\Temp\surefire11412598961078675434tmp"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.5"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -53,18 +49,16 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.5"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
-    <property name="maven.home" value="C:\Tools\MAVEN\apache-maven-3.6.1\bin\.."/>
+    <property name="localRepository" value="C:\Users\111105\.m2\repository"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2019-10-15"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="18.9"/>
-    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="myFirstTest" name="testDivideByZero" time="0.016"/>
-  <testcase classname="myFirstTest" name="AddPass" time="0"/>
+  <testcase name="testDivideByZero" time="0.001"/>
+  <testcase name="AddPass" time="0"/>
 </testsuite>

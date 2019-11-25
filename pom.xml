@@ -35,7 +35,11 @@
                 <version>2.3</version>
                 <configuration>
                     <!-- (2)  setup the argLine and run the unit tests.   **NOTE the "jacocArgeLine" property was configured the "prepare-agent" goal of Jacoco  (see below) -->
-                    <argLine>${jacocoArgLine} -Xmx256m</argLine>
+                    <!--
+                    if you want to resolve the property value as late as possible (i.e. your dyamically alter this property value before reaching this phase
+                     Maven gives you option to use @{jacocoArgLine} instead
+                     -->
+                    <argLine>${surefire.argLine}</argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -49,7 +53,8 @@
                             <goal>prepare-agent</goal>
                         </goals>
                         <configuration>
-                            <propertyName>jacocoArgLine</propertyName>
+                            <propertyName>surefireArgLine</propertyName>
+                            <destFile>${project.build.directory}/target/jacoco.exec</destFile>
                         </configuration>
                     </execution>
                     <execution>
