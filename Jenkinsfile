@@ -7,7 +7,7 @@ pipeline
 		{
 			steps
 			{
-				bat "mvn test"
+				bat "mvn clean compile"
 			}
 		}
 		stage('Sonar Code Analysis')
@@ -16,7 +16,7 @@ pipeline
 			{
 				withSonarQubeEnv(credentialsId: 'sonar', installationName: 'sonarqube')
 				{
-                        bat "mvn test sonar:sonar"
+                    bat "mvn test sonar:sonar"
 				}
 			}
 		}

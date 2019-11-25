@@ -25,11 +25,11 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url>
-                    http://localhost:9000
-                </sonar.host.url>
-            </properties>
+				<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+				<sonar.jacoco.reportPath>
+					${project.basedir}/../target/jacoco.ex</sonar.jacoco.reportPath>
+				<sonar.language>java</sonar.language>
+			</properties>
         </profile>
     </profiles>
     <build>
