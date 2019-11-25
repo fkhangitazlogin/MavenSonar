@@ -28,7 +28,7 @@ public class myFirstTest {
         long result = objcalc.sub(a,b);
         Assert.assertEquals(lookingfor,result);
     }
-    @Test
+    /*@Test
     public void MulPass()
     {
         int a=10;
@@ -51,5 +51,5 @@ public class myFirstTest {
         int a = 15;
         int b = 0;
         objcalc.div(a, b);
-    }
+    }*/
 }

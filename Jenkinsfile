@@ -10,21 +10,14 @@ pipeline
 				bat "mvn clean compile"
 			}
 		}
-		stage('Test')
-		{
-			steps
-			{
-				bat "mvn clean test"
-			}
-		}
-		/*stage('JaCoCo')
+		stage('JaCoCo')
 		{
             steps 
 			{
                 echo 'Code Coverage'
                 jacoco()
             }
-        }*/
+        }
         stage('Sonar') 
 		{
             steps 
@@ -36,12 +29,12 @@ pipeline
 			    }
             }
         }
-        /*stage('build coverage check')
-        {
-            steps
-            {
-                bat 'mvn clean verify'
-            }
-        }*/
+        stage('Test Coverage Threshold')
+        		{
+        			steps
+        			{
+        				bat "mvn clean test"
+        			}
+        		}
 	}
 }
