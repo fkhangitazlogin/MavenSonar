@@ -38,7 +38,7 @@
                 <version>0.8.4</version>
                 <executions>
                     <execution>
-                        <id>prepare-initialize</id>
+                        <id>jacoco-initialize</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
@@ -68,7 +68,7 @@
                     <!-- attached to Maven test phase -->
                     <execution>
                         <id>jacoco-report</id>
-                        <phase>test</phase>
+                        <phase>prepare-package</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
