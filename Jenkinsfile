@@ -10,6 +10,13 @@ pipeline
 				bat "mvn clean compile"
 			}
 		}
+		stage('Test Coverage Threshold')
+        {
+            steps
+            {
+                bat "mvn clean test"
+            }
+        }
 		stage('JaCoCo')
 		{
             steps 
@@ -29,12 +36,5 @@ pipeline
 			    }
             }
         }
-        stage('Test Coverage Threshold')
-        		{
-        			steps
-        			{
-        				bat "mvn clean test"
-        			}
-        		}
 	}
 }

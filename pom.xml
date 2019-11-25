@@ -7,7 +7,7 @@
     <artifactId>mavenSonar</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <jacoco.percentage.instruction>0.80</jacoco.percentage.instruction>
+        <jacoco.percentage.instruction>0.30</jacoco.percentage.instruction>
     </properties>
     <dependencies>
         <dependency>
