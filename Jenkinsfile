@@ -36,5 +36,9 @@ pipeline
 			    }
             }
         }
+        stage('build coverage check')
+        {
+            bat 'mvn clean verify'
+        }
 	}
 }
